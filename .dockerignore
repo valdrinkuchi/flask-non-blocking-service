@@ -1,0 +1,8 @@
+.pytest_cache
+.git
+.github
+.gitignore
+.vscode
+docs
+README.md
+
