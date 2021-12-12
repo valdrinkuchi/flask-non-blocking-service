@@ -1,10 +1,10 @@
 # Non-Blocking Flask Service
 
-This flask application aims so explain the difference and advantage of a
+This flask application aims to explain the difference and advantages of a
 non-blocking service. In this repository, two simple methods are compared.
 One method is used for adding two numbers and the other one is used for
 multiplying two numbers. In order to display a delay during the execution of
-the methods for each of them a 3 second sleeping time is added.
+the methods, for each one of them a 3 second sleeping time is added.
 
 ## Installation
 
@@ -63,7 +63,7 @@ docker hub which can be pulled and run on the desired port. This step does not
 need any installation of the Flask Application. However, it assumes that a docker
 runtime is present.
 
-The application is served using gunicorn server and 4 workers if run from the docker
+The application is served using gunicorn server and 4 workers when run from the docker
 image. If you want to run the locally installed app using gunicorn you can use the
 command found in the `entrypoint.sh`
 
@@ -107,7 +107,7 @@ For testing purposes two end points are provided:
 
 As you can see from the response data that the `elapsed_time` is `% 50` less when
 the execution is made asynchronously. The multiplication process does not have to wait
-for the addition method to finish in turn it is executed in a separate event loop.
+for the addition method to finish, in turn, it is executed in a separate event loop.
 Thus making the execution time `% 50` shorter.
 
 ## Used tools
